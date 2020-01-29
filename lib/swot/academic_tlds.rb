@@ -245,7 +245,5 @@ class Swot
     tec.wi.us
     tec.wv.us
     vic.edu.au
-    educanet2.ch
-    eptsion.ch
   ).to_set.freeze
 end
