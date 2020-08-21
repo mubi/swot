@@ -10,4 +10,5 @@ group :development do
   gem "bundler", "~> 1.5"
   gem "jeweler", "~> 1.8"
   gem "minitest", "~> 4.7.5"
+  gem "irb"
 end
