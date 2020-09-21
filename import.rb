@@ -2,8 +2,8 @@
 
 require "fileutils"
 
-ARGF.each_with_index do |line, idx|
-  parts = line.strip.split(".").reverse
+ARGF.each do |line|
+  parts = line.strip.delete_prefix('@').split(".").reverse
   name = parts.pop
   dirs = parts.join("/")
   path = "#{File.expand_path(__FILE__+'/..')}/lib/domains/#{dirs}"
