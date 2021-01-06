@@ -10,7 +10,7 @@ ARGF.each do |line|
   if File.exist?(file_path)
     next
   else
-    FileUtils.mkdir_p Swot::domains_path
+    FileUtils.mkdir_p File.dirname(file_path)
     File.open(file_path, "w") { |f| f.puts(swot.domain.domain.split('.').first) }
   end
 end
